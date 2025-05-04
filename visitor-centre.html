@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Centre</title>
+  <style>
+    body {
+      background-color: #0b0f11;
+      color: gold;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: orange;
+    }
+    textarea, input[type="text"] {
+      width: 80%;
+      max-width: 500px;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: orange;
+      border: none;
+      color: black;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .guestbook-entry {
+      margin-top: 30px;
+      padding: 10px;
+      border-top: 1px solid gold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🪐 Visitor Centre</h1>
+  <p>Welcome, traveller. Drop your thoughts, greetings, or spacefaring wisdom in the log below.</p>
+
+  <input type="text" placeholder="Your Name" id="name"><br>
+  <textarea placeholder="Leave a message..." rows="4" id="message"></textarea><br>
+  <button onclick="submitMessage()">Sign the Guestbook</button>
+
+  <div id="guestbook" class="guestbook-entry">
+    <h2>Guestbook Entries</h2>
+    <p><em>Your message will be delivered across the stars (via Formspree).</em></p>
+    <div id="entries"></div>
+  </div>
+
+  <p><a href="index.html" style="color: orange;">← Back to Home</a></p>
+
+  <script>
+    function submitMessage() {
+      const name = document.getElementById("name").value;
+      const message = document.getElementById("message").value;
+      const entries = document.getElementById("entries");
+
+      if (name && message) {
+        const entry = document.createElement("p");
+        entry.innerHTML = `<strong>${name}</strong>: ${message}`;
+        entries.prepend(entry);
+        document.getElementById("name").value = "";
+        document.getElementById("message").value = "";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+// Counter logic placeholder

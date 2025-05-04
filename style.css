@@ -1,0 +1,28 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #000000;
+    color: #87CEEB; /* soft sky blue */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #FFA500; /* orange titles */
+}
+
+a {
+    color: #FFD700; /* gold links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
