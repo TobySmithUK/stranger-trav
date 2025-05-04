@@ -1,99 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stranger on a Strange Shore</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      background-color: black;
-      color: #00bfff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      padding: 20px;
-    }
-    h1 {
-      color: #00bfff;
-    }
-    .image-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      margin: 20px 0;
-    }
-    .cover {
-      width: 30%;
-    }
-    .download-button {
-      width: 150px;
-      cursor: pointer;
-    }
-    .cali-image {
-      text-align: center;
-      margin: 40px 0;
-    }
-    .cali {
-      width: 50%;
-    }
-    .visitor-centre {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .logo {
-      display: block;
-      margin: 40px auto 0;
-      width: 200px;
-    }
-    a {
-      color: #ff9900;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Stranger on a Strange Shore</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00e0ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: orange;
+        }
+        img.cover, img.backcover {
+            width: 30%;
+            margin: 20px;
+        }
+        img.cali {
+            width: 40%;
+            margin: 40px auto;
+            display: block;
+        }
+        .download-button {
+            cursor: pointer;
+            width: 200px;
+        }
+        .visitor-info {
+            margin-top: 40px;
+            color: lightblue;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>WELCOME, TRAVELLER.</h1>
-      <p>You’ve reached the edge of charted space! A place where memory fades, stars burn cold, and stories take on a life of their own.<br><br>
-      This isn’t a blog. It’s not a portfolio. It’s just a quiet corner of the galaxy where a story lives: <strong>Stranger on a Strange Shore</strong>.<br><br>
-      Born from a Traveller RPG campaign and written from notes, memories, and the madness of a group of friends who rolled dice every Tuesday night, it’s a full-length, character-driven tale of survival, mystery, and rediscovery.<br><br>
-      The world was imagined. The choices were real. The dice were random and unforgiving!<br><br>
-      What began as a game became something more, forged in fire, fate, and friendship, and brought to life with a little help from AI.<br><br>
-      Think of it like a black box from a forgotten mission: cracked open, cleaned up, and retold one chapter at a time.<br><br>
-      So, pull up a chair. Grab a good bottle. And enjoy!<br>
-      <strong>It’s a mighty fine story.</strong><br><br>
-      While you're here, please stop by the <a href="visitor-centre.html">Visitor Centre</a> and sign the guestbook. I'd love to hear what you think.<br><br>
-      <em>Thanks for visiting.<br>Toby Smith</em></p>
-    </header>
+    <h1>WELCOME, TRAVELLER.</h1>
+    <p>You’ve reached the edge of charted space! A place where memory fades, stars burn cold, and stories take on a life of their own.<br>
+    This isn’t a blog. It’s not a portfolio. It’s just a quiet corner of the galaxy where a story lives: <strong>Stranger on a Strange Shore</strong>.<br>
+    Born from a Traveller RPG campaign and written from notes, memories, and the madness of a group of friends who rolled dice every Tuesday night, it’s a full-length, character-driven tale of survival, mystery, and rediscovery.<br>
+    The world was imagined. The choices were real. The dice were random and unforgiving!<br>
+    What began as a game became something more, forged in fire, fate, and friendship, and brought to life with a little help from AI.<br>
+    Think of it like a black box from a forgotten mission: cracked open, cleaned up, and retold one chapter at a time.<br>
+    So, pull up a chair. Grab a good bottle. And enjoy!<br>
+    <strong>It’s a mighty fine story.</strong></p>
 
-    <main>
-      <div class="image-row">
-        <img src="cover.jpg" alt="Cover" class="cover" />
-        <a href="stranger-story.pdf" download>
-          <img src="Download2.jpg" alt="Download PDF" class="download-button" />
-        </a>
-        <img src="back-cover.jpg" alt="Back Cover" class="cover" />
-      </div>
+    <p style="margin-top: 30px; font-style: italic; color: lightblue;">
+      While you're here, please stop by the <a href="visitor-centre.html" style="color: orange;">Visitor Centre</a> and sign the guestbook.<br>
+      I'd love to hear what you think.
+    </p>
 
-      <div class="cali-image">
-        <img src="cali.jpg" alt="Cali on Porch" class="cali" />
-      </div>
+    <p style="margin-top: 40px; font-size: 1.1em; color: #00e0ff;">
+      Thanks for visiting.<br>
+      <strong>Toby Smith</strong>
+    </p>
 
-      <div class="visitor-centre">
-        <p>Visitor Counter:</p>
-        <img src="https://hitwebcounter.com/counter/counter.php?page=9999999&style=0006&nbdigits=5&type=page&initCount=0" title="Web Counter" alt="web counter" border="0" />
-        <p><a href="visitor-centre.html">Visit the Visitor Centre / Guestbook</a></p>
-        <p><a href="extras.html">Explore the Extras</a></p>
-      </div>
+    <div>
+        <img src="images/cover.jpg" alt="Cover" class="cover">
+        <img src="images/Download2.jpg" alt="Download PDF" class="download-button" id="downloadBtn">
+        <img src="images/back-cover.jpg" alt="Back Cover" class="backcover">
+    </div>
 
-      <footer>
-        <img src="traveller-logo.JPG" alt="Traveller Logo" class="logo" />
-      </footer>
-    </main>
-  </div>
+    <img src="images/cali.jpg" alt="Cali on Porch" class="cali">
+
+    <div class="visitor-info">
+        <p><strong>Visitor Counter:</strong></p>
+        <img src="https://www.webfreecounter.com/hit.php?id=gmfaffao&nd=6&style=71" border="0" alt="visitor counter">
+        <p><a href="visitor-centre.html" style="color:orange;">Visit the Visitor Centre / Guestbook</a></p>
+    </div>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            this.src = 'images/Download3.jpg';
+            window.location.href = 'Strangers on a Strange Shore - story.pdf';
+        });
+    </script>
 </body>
 </html>
