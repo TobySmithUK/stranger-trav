@@ -26,3 +26,13 @@ a:hover {
     margin: auto;
     padding: 20px;
 }
+
+.traveller-logo {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.traveller-logo img {
+  max-width: 100%;
+  height: auto;
+}
