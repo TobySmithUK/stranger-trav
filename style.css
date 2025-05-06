@@ -37,8 +37,13 @@ a:hover {
   height: auto;
 }
 
+
 .gold-link {
-  color: #FFD700; /* gold */
+  color: #FFD700; /* Original gold */
+}
+
+.gold-link:visited {
+  color: #DAA520; /* Darker gold for visited links */
 }
 
 .gold-link:hover {
