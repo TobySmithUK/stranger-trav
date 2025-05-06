@@ -7,32 +7,6 @@
   <title>Visitor Centre</title>
 
 
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAh6ckrXj5sXZxP8_X64KuAtvGPixbFYro",
-    authDomain: "travellerguestbook.firebaseapp.com",
-    projectId: "travellerguestbook",
-    storageBucket: "travellerguestbook.firebasestorage.app",
-    messagingSenderId: "1092848155229",
-    appId: "1:1092848155229:web:4e4122e0326852efafebb4",
-    measurementId: "G-QKYB9TQTEF"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-
-  
-
 
 
   
@@ -76,10 +50,14 @@
   <h1>🪐 Visitor Centre</h1>
   <p>Welcome, traveller. Drop your thoughts, greetings, or spacefaring wisdom in the log below.</p>
 
-  <input type="text" placeholder="Your Name" id="name"><br>
-  <textarea placeholder="Leave a message..." rows="4" id="message"></textarea><br>
-  <button onclick="submitMessage()">Sign the Guestbook</button>
-
+ 
+  <form action="https://formspree.io/f/mbloowyr"" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required><br>
+  <textarea name="message" placeholder="Send a message..." rows="4" required></textarea><br>
+  <button type="submit">Sign the Guestbook</button>
+</form>
+  
+  
   <div id="guestbook" class="guestbook-entry">
     <h2>Guestbook Entries</h2>
     <p><em>Your message will be delivered across the stars (via Formspree).</em></p>
