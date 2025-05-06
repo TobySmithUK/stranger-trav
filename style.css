@@ -49,3 +49,7 @@ a:hover {
 .gold-link:hover {
   text-decoration: underline;
 }
+
+.link-block {
+  margin: 10px 0;
+}
