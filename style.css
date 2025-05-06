@@ -36,3 +36,11 @@ a:hover {
   max-width: 100%;
   height: auto;
 }
+
+.gold-link {
+  color: #FFD700; /* gold */
+}
+
+.gold-link:hover {
+  text-decoration: underline;
+}
